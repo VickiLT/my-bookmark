@@ -87,6 +87,7 @@ api.post('/login', function(req, res) {
                 ret.logined = true;
                 ret.user = user;
                 req.session.user = user;
+                console.log(ret.user);
                 req.session.username = ret.user.username;
                 req.session.userId = ret.user.id;
             }

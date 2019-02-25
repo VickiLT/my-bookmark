@@ -1,8 +1,8 @@
 var mysql = require('mysql');
 var dbConfig = {
-    host: '127.0.0.1',
-    user: 'test', // mysql的账号
-    password: '123456', // mysql 的密码
+    host: 'www.ltecho.com',
+    user: 'vicki', // mysql的账号
+    password: 'vicki0513', // mysql 的密码
     database: 'mybookmarks',
     multipleStatements: true,
     useConnectionPooling: true,
@@ -404,6 +404,7 @@ db.getUser = function(username) {
                 reject(err);
             } else {
                 resolve(result[0]);
+                console.log(result[0]);
             }
         });
     });

@@ -24,10 +24,12 @@ app.factory('dataService', [function() {
         }, {
             uiSref: 'note',
             title: '备忘'
-        }, {
-            uiSref: 'hot',
-            title: '热门'
-        }, {
+        },
+        //, {
+         //   uiSref: 'hot',
+         //   title: '热门'
+        //}, 
+        {
             uiSref: 'settings',
             title: '设置'
         }, {
